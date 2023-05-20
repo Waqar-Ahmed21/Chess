@@ -98,7 +98,6 @@ public class chess2
         JButton b = new JButton("CHESS");
 
         b.setBounds(60, 170, 100, 100);
-        c.setBounds(300, 170, 100, 100);
 
         panel = new JPanel();
         panel.setBounds(0, 0, 500, 500);
@@ -112,22 +111,15 @@ public class chess2
         // Set text alignment to center
         b.setHorizontalTextPosition(JButton.CENTER);
         b.setVerticalTextPosition(JButton.BOTTOM);
-        c.setHorizontalTextPosition(JButton.CENTER);
-        c.setVerticalTextPosition(JButton.BOTTOM);
 
         b.setBackground(Color.gray);
-        c.setBackground(Color.gray);
         b.setForeground(Color.black);
-        c.setForeground(Color.black);
 
         b.setFont(font);
-        c.setFont(font1);
 
         b.setIcon(wpawn);
-        c.setIcon(wqueen);
 
         b.setFocusable(false);
-        c.setFocusable(false);
 
         ImageIcon i = new ImageIcon("C:\\VS Code\\CHESS\\Chess\\src\\tilted\\Bishop.png");
         JLabel imageLabel = new JLabel(i);
