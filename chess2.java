@@ -96,7 +96,6 @@ public class chess2
 
 
         JButton b = new JButton("CHESS");
-        JButton c = new JButton("SPECIAL");
 
         b.setBounds(60, 170, 100, 100);
         c.setBounds(300, 170, 100, 100);
@@ -106,11 +105,9 @@ public class chess2
         panel.setLayout(null);
 
         panel.add(b);
-        panel.add(c);
         panel.setBackground(Color.black);
 
         b.setLayout(new BoxLayout(b, BoxLayout.Y_AXIS));
-        c.setLayout(new BoxLayout(c, BoxLayout.Y_AXIS));
 
         // Set text alignment to center
         b.setHorizontalTextPosition(JButton.CENTER);
@@ -160,14 +157,6 @@ public class chess2
             }
         });
 
-        c.addActionListener(new ActionListener() 
-        {
-            public void actionPerformed(ActionEvent e) 
-            {
-                mainFrame.setVisible(false);
-                special();
-            }
-        });
 
         mainFrame.setVisible(true);
     }
